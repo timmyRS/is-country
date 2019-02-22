@@ -6,10 +6,10 @@ Returns true if your input is a country. Supports country name, ISO 3166-1 alpha
 
 Run `npm i is-country` and then you can use this gloriously useful utility, as such:
 
-    const isCountry = require("./index.js");
+    const isCountry = require("is-country");
     async function main()
     {
-        console.log(await isCountry("DE"));
-        console.log(await isCountry("XX"));
+        console.log(await isCountry("DE")); // true
+        console.log(await isCountry("XX")); // false
     }
     main();
